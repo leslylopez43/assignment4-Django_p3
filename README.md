@@ -89,7 +89,7 @@
 
 ## Guest Stories
 # Accommodation Management System Ariel 
-[![Ariel](https://example.com/path/to/screenshot.png)](https://example.com/path/to/screenshot.png)
+[![Ariel](/img/Ariel%20Logo.webp)](/img/LogoAriel.webp)
 
 
 Welcome to the Accommodation Management System! This system helps you manage tenant information, tenancy details, accommodation availability, and payments. Let's dive into the story of how these tables work together to streamline the accommodation management process.
