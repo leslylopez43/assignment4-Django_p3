@@ -1,18 +1,60 @@
-TENANT 
-    |||TENANT ID
-    NAME LAST NAME 
-    DOB
-    PLUS 18'S 
-    UNDER 18'S
-    EMAIL ADDRES 
-    Mobile Phone
-    Address
-    Post Code
-    Country
-    Billing Address
-    Post code
-    Country
-    Duration
-    Number of Guest
+## Tenant Table
 
-    
+| Field            | Description            |
+|------------------|------------------------|
+| Tenant ID        | Unique identifier for the tenant      |
+| Name             | Tenant's first name     |
+| Last Name        | Tenant's last name      |
+| DOB              | Tenant's date of birth  |
+| Plus 18's        | Number of tenants aged 18 and above   |
+| Under 18's       | Number of tenants below 18 years old  |
+| Email Address    | Tenant's email address  |
+| Mobile Phone     | Tenant's mobile phone number |
+| Address          | Tenant's address        |
+| Post Code        | Tenant's postal code    |
+| Country          | Tenant's country        |
+| Billing Address  | Tenant's billing address |
+| Billing Post Code| Tenant's billing postal code |
+| Billing Country  | Tenant's billing country |
+
+## Tenancy Table
+
+| Field            | Description            |
+|------------------|------------------------|
+| Accommodation ID | Unique identifier for the accommodation  |
+| Tenant ID        | Unique identifier for the tenant  |
+| Check-in         | Date and time of check-in  |
+| Check-out        | Date and time of check-out |
+| Sleeps           | Number of people accommodated |
+| Venue Type       | Type of venue (e.g., hall, apartment) |
+
+## Accommodation Table
+
+| Field            | Description            |
+|------------------|------------------------|
+| Tenant ID        | Unique identifier for the tenant  |
+| Accommodation ID | Unique identifier for the accommodation  |
+
+## Hall Table
+
+| Field            | Description            |
+|------------------|------------------------|
+| Accommodation ID | Unique identifier for the hall  |
+| Weddings         | Availability for weddings |
+| Birthdays        | Availability for birthdays |
+| Parties          | Availability for parties   |
+| Baby Shower      | Availability for baby showers |
+| Corporate Events | Availability for corporate events |
+| Christmas        | Availability for Christmas events |
+| Lilmedshoot & Photoshoot | Availability for lifestyle and photoshoots |
+
+## Apartments Table
+
+| Field            | Description            |
+|------------------|------------------------|
+| Accommodation ID | Unique identifier for the apartment  |
+| Check-in         | Date and time of check-in  |
+| Check-out        | Date and time of check-out |
+| Guest            | Number of guests          |
+| Rooms            | Number of rooms           |
+| Check Availability | Availability of the apartment |
