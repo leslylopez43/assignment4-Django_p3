@@ -118,5 +118,5 @@ To ensure seamless and secure transactions, we have the **Payments Table**. This
 
 Finally, we have the **Business or Owner Name Table**. This table connects with the **Accommodation Table** and stores the details of the business or owner associated with each accommodation. It includes their name, business name, address, email address, and VAT information.
 
-That wraps up our story of the Accommodation Management System and the interconnected tables within it. With this system in place, you can efficiently manage tenant information, tenancy details, accommodation availability, and payments. Enjoy using the system, and feel free to explore further!
+That wraps up our story of the Accommodation Management System and the interconnected tables within it. With this system in place, you can efficiently manage tenant information, tenancy details, accommodation availability, and payments. 
 
