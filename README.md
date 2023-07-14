@@ -35,7 +35,7 @@
 | Tenant ID        | Unique identifier for the tenant  |
 | Accommodation ID | Unique identifier for the accommodation  |
 
-###### Hall Table
+### Hall 
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -48,7 +48,7 @@
 | Christmas        | Availability for Christmas events |
 | Lilmedshoot & Photoshoot | Availability for lifestyle and photoshoots |
 
-##### Apartments Table
+### Apartments 
 
 | Field            | Description            |
 |------------------|------------------------|
