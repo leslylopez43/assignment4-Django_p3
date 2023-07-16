@@ -1,3 +1,5 @@
+###  "GET /favicon.ico HTTP/1.1" 404 2109
+
 ## Tenant Table
 
 | Field            | Description            |
