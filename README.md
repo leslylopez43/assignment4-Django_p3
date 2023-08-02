@@ -126,3 +126,12 @@ That wraps up my story of the Accommodation Management System and the interconne
 ## Logo Creator
 
 I used the website hhttp:/www/freelogocreator.com
+
+
+makemigrations --dry-run
+showmigrations
+migrate --plan
+migrate
+python3 manage.py createsuperuser
+
+install flake8 
