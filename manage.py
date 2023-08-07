@@ -4,8 +4,22 @@ import os
 import sys
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
+    }
+}
+
+
 def main():
     """Run administrative tasks."""
+    os.environ.setdefault("DATABASE_URL", "postgres://dzpispkp:n2Re-UTYz06WFM4kwCOQwneCNygqaCEU@surus.db.elephantsql.com/dzpispkp")
+    
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_venuemanagement.settings')
     try:
         from django.core.management import execute_from_command_line
