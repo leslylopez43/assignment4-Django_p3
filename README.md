@@ -135,3 +135,9 @@ migrate
 python3 manage.py createsuperuser
 
 install flake8 
+
+pip install gunicorn whitenoise
+pip3 install psycopg2-binary
+pip3 install gunicorn
+
+how to create a file pip3 freeze --local > requirements.txt
