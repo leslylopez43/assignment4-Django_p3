@@ -132,6 +132,8 @@ makemigrations --dry-run
 showmigrations
 migrate --plan
 migrate
+
+create a super user admin
 python3 manage.py createsuperuser
 
 install flake8 
