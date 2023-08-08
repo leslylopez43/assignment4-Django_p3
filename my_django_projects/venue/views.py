@@ -23,5 +23,5 @@ def  add_tenant_item(request):
         done = "done" in request.POST
         Item.objects.create(name=name, done=done)
         
-        return  redirect ("get_tenant")
-    return render(request, '/add_tenant.html',)
+        return  redirect ("get_tenant"),
+    return render(request, "add_tenant.html"),

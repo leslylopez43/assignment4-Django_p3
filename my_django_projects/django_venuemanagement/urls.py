@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls), 
     path("", get_venue_list, name = "get_venue_list"),
     path("tenant", get_tenant, name = "get_tenant"),
-    path("add_tenant", add_tenant_item, name = "add_tenant")
+    path("add_tenant", add_tenant_item, name = "add_tenant"),
+   
 ]
