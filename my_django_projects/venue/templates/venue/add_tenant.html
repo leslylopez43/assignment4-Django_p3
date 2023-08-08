@@ -8,7 +8,81 @@
 </head>
 <body>
     <h1>Add Tenant</h1>
-    
+    <form method="POST" action="add">
+        {% csrf_token %}
+            
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Tenant ID</td>
+                    <td><input type="text" name="tenant_id"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="text" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Plus 18's</td>
+                    <td><input type="number" name="plus_18"></td>
+                </tr>
+                <tr>
+                    <td>Under 18's</td>
+                    <td><input type="number" name="under_18"></td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Phone</td>
+                    <td><input type="tel" name="mobile_phone"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Post Code</td>
+                    <td><input type="text" name="post_code"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" name="country"></td>
+                </tr>
+                <tr>
+                    <td>Billing Address</td>
+                    <td><input type="text" name="billing_address"></td>
+                    <tr>
+                        <td>Same as Tenant's Address</td>
+                        <td><input type="checkbox" name="billing_same_as_address"></td>
+                    </tr>
+            
+               
+            </table>
+
+        
+        <div><p>
+            <label for="id_done">Done </label> 
+            </p>
+            <input type="checkbox" id="id_done" name="done">
+    </div>
+        <div> 
+            <p>
+            <button type="submit">Add Item</button></p>
+        </div>
+
+    </form>
 
 </body>
 </html>

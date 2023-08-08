@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -25,86 +16,28 @@
         th {
             background-color: #f2f2f2;
         }
+
+        .strike {
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body>
 
 <h1>Tenant Table</h1>
-
 <table>
+    {% for item in items %}
     <tr>
-        <th>Field</th>
-        <th>Description</th>
+        {% if item.done%}
+        <td><strike>{{item.name}}</strike></td>
+        {% else %}
+        <td>{{item.name}}</td>
+        {% endif %}
     </tr>
-    <tr>
-        <td>Tenant ID</td>
-        
-            <tr>{% if item.done%}
-                <td><strike>{{ items["Tenant ID"] }}</strike></td>
-                {% esle  %}
-                <td>{{ items["Tenant ID"] }}</td>
-                {% endif%}
-                <td>{{ items["Tenant ID"] }}</td>
-
-            </tr>
-        </td>
-    </tr>
-    
-        <td>Name</td>
-        <td>{{ items["Name"] }}</td>
-    </tr>
-    <tr>
-        <td>Last Name</td>
-        <td>{{ items["Last Name"] }}</td>
-    </tr>
-    <tr>
-        <td>DOB</td>
-        <td>{{ items["DOB"] }}</td>
-    </tr>
-    <tr>
-        <td>Plus 18's</td>
-        <td>{{ items["Plus 18's"] }}</td>
-    </tr>
-    <tr>
-        <td>Under 18's</td>
-        <td>{{ items["Under 18's"] }}</td>
-    </tr>
-    <tr>
-        <td>Email Address</td>
-        <td>{{ items["Email Address"] }}</td>
-    </tr>
-    <tr>
-        <td>Mobile Phone</td>
-        <td>{{ items["Mobile Phone"] }}</td>
-    </tr>
-    <tr>
-        <td>Address</td>
-        <td>{{ items["Address"] }}</td>
-    </tr>
-    <tr>
-        <td>Post Code</td>
-        <td>{{ items["Post Code"] }}</td>
-    </tr>
-    <tr>
-        <td>Country</td>
-        <td>{{ items["Country"] }}</td>
-    </tr>
-    <tr>
-        <td>Billing Address</td>
-        <td>{{ items["Billing Address"] }}</td>
-    </tr>
-    <tr>
-        <td>Billing Post Code</td>
-        <td>{{ items["Billing Post Code"] }}</td>
-    </tr>
-    <tr>
-        <td>Billing Country</td>
-        <td>{{ items["Billing Country"] }}</td>
-    </tr>
-</table>
- <a href="/add_tenant">Add a Tenant</a>
-</body>
-</html>
+{% empty %}
+<tr><td>You have nothing to do.</td></tr>
+    {% endfor%}
+    <a href="{% url 'add_tenant' %}">Add new Tenant </a>
 
 </body>
 </html>
