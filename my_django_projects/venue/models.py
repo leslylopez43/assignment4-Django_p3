@@ -7,3 +7,4 @@ class Item(models.Model):
 
     def __(self):
         return self.name
+        

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Add Tenant</h1>
-    <form method="POST" action="add">
+    <form method="POST" action="/add">
         {% csrf_token %}
             
             <table>
@@ -18,23 +18,23 @@
                 </tr>
                 <tr>
                     <td>Tenant ID</td>
-                    <td><input type="text" name="item_name"></td>
+                    <td><input type="text" name="tenant_id"></td>
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" name="item_name"></td>
+                    <td><input type="text" name="name"></td>
                 </tr>
                 <tr>
                     <td>Last Name</td>
-                    <td><input type="text" name="item_name"></td>
+                    <td><input type="text" name="last_name"></td>
                 </tr>
                 <tr>
                     <td>DOB</td>
-                    <td><input type="text" name="item_dob"></td>
+                    <td><input type="text" name="dob"></td>
                 </tr>
                 <tr>
                     <td>Plus 18's</td>
-                    <td><input type="number" name="Item_plus_18"></td>
+                    <td><input type="number" name="plus_18"></td>
                 </tr>
                 <tr>
                     <td>Under 18's</td>
