@@ -17,11 +17,11 @@ def  get_tenant(request):
     }
     return render(request, "venue/tenant.html", context)
 
-def  add_tenant_item(request):
+def  add_tenant(request):
     if request.method == "POST" :
         name = request.POST.get("item_name")
         done = "done" in request.POST
         Item.objects.create(name=name, done=done)
         
-        return  redirect ("get_tenant"),
-    return render(request, "add_tenant.html"),
+        return  redirect ("get_tenant")
+    return render(request, "venue/add_tenant.html")

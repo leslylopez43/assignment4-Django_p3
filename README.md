@@ -16,8 +16,7 @@
 | Post Code        | Tenant's postal code    |
 | Country          | Tenant's country        |
 | Billing Address  | Tenant's billing address |
-| Billing Post Code| Tenant's billing postal code |
-| Billing Country  | Tenant's billing country |
+
 
 ## Tenancy Table
 
