@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from venue.views import get_venue_list
+from venue.views import get_tenant, add_tenant_item
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path("", get_venue_list, name = "get_venue_list")
+    path("", get_venue_list, name = "get_venue_list"),
+    path("", get_tenant, name = "get_tenant"),
+    path("add", add_tenant_item, name = "add_tenant")
 ]
